@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard|Quantum</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+
+    </head>
+    <body id="my-body">
+        <header aria-label="Header">
+            <img src="./icons/header_logo.svg" id="logo" alt="Quantum Logo">
+            
+            <ul class="options" style="background: none; outline: none; border: none;" role="menubar">
+                <li class="white-hover small-screen-disable" role="menuitem">
+                    <a href="#">DASHBOARD</a>
+                </li>
+                <li class="white-hover small-screen-disable" role="menuitem">
+                    <a href="#">CONTENT</a>
+                </li>
+                <li class="white-hover small-screen-disable" role="menuitem">
+                    <a href="#">USERS</a>
+                </li>
+                <li class="white-hover small-screen-disable" role="menuitem">
+                    <a href="#">REPORTS</a>
+                </li>
+                <li class="white-hover small-screen-disable" role="menuitem">
+                    <a href="#">ADMIN</a>
+                </li>
+                <li class="white-hover bell-option announcement-noti" role="menuitem">
+                    <a href="#">
+                        <img src="./icons/alerts.svg" alt="alert button" class="bell-svg">
+                    </a>
+                    <div class="announcement--container">
+                        <div class="announcement-content-container"></div>
+                        <div class="sticky">
+                            <div>SHOW ALL</div>
+                        </div>
+                    </div>
+                    <span class="notification announce-noti"></span>
+                </li>
+                <li class="white-hover announcement-noti" role="menuitem">
+                    <a href="#">
+                        <img src="./icons/announcements.svg" alt="announcement button" class="microphone">
+                    </a>
+                    <div class="announcement--container">
+                        <div class="announcement-content-container"></div>
+                        <div class="sticky">
+                            <div>SHOW ALL</div>
+                        </div>
+                    </div>
+                    <span class="notification announce-noti"></span>
+                </li>
+                <li class="white-hover" role="menuitem">
+                    <a href="#">
+                        <img src="./icons/user-icon.png" alt="user profile" id="user-dp">
+                    </a>
+                    <span class="notification-prof">1</span>
+
+                </li>
+                <li class="hamburger-menu" role="menuitem">
+                    <button class="remove-styles" id="btn-menu">
+                        <img src="./icons/hamburger_menu.svg" alt="side menu button">
+                    </button>
+                    <div class = "mobile-menu">
+                        <div id="ham-dropdown" class="menu-hamburger">
+                            <ul class="remove-styles">
+                                <li>
+                                    <div class="opt">
+                                        <a href = "#">DASHBOARD</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="opt">
+                                        <a href = "#">CONTENT</a>
+                                        <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
+                                        <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
+                                    </div>
+                                    <div class="hidden-content">
+                                        <p>
+                                            COURSE CATALOG
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="opt">
+                                        <a href = "#">USERS</a>
+                                        <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
+                                        <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="opt">
+                                        <a href = "#">REPORTS</a>
+                                        <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
+                                        <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="opt">
+                                        <a href = "#">ADMIN</a>
+                                        <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
+                                        <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>             
+            </ul>
+
+
+        </header>
+        
+        <main id="main" aria-label="Main region of page">
+           
+            <div class="main-head">
+                <div class="course-class">
+                    <div class="courses">
+                        <img src="./icons/courses.svg" alt="course icon">
+                        <strong class="head">4</strong>
+                        <span>courses</span>
+                    </div>
+                    <div class="courses">
+                        <img src="./icons/classes.svg" alt="class icon">
+                        <strong>4</strong>
+                        <span>classes</span>
+                    </div>
+                </div>
+                <div class="show-sort">
+                    <p class="show-head">Showing 4 of 4 courses</p>
+                    <div class="sort-dropdown">
+                        <label for id="sort" class="show-head">
+                            Sort by:
+                        </label>
+                        <select class="remove-styles course-sel" name="sort-select" id="sort">
+                            <option value="name">Course Name</option>
+                            <option value="date">Course Date</option>
+                            <option value="ratings">Course Ratings</option>
+                        </select>
+                        <img src="./icons/sort.svg" alt="sort button">
+                    </div>
+                </div>
+            </div>
+            <div class="content-courses">
+                <div class="separator"></div>
+                <div class = "content" id="course-container1">
+                </div>
+                <div class="separator"></div>
+            </div>
+        </main>
+        
+        <footer aria-label="Footer  ">
+            <div class="info">
+                <span class="about">
+                    <a href="#" class="p-a-styles">
+                        About
+                    </a>
+                </span>
+                <span class="contact">
+                    <a href="#" class="p-a-styles">
+                        Contact Us
+                    </a>
+                </span>
+            </div>
+
+            <div class="company-info">
+                <img src="./icons/footer_logo.svg" alt="logo" class="bottom-logo">
+                <span class="copyright">
+                    Copyright &#169; 2020-2021
+                </span>
+                <span class="company-name">
+                    Zeus Systems Pvt. Ltd.
+                </span>
+                <span class="rights">
+                    All rights reserved
+                </span>
+            </div>
+        </footer>
+        <script src="./render.js"></script>
+        <script src="./dashboard.js"></script>
+        <script src="./dropdowns.js"></script>
+        <script src="./alert-announcement.js"></script>
+
+    </body>
+</html>
